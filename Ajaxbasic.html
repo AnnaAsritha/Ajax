@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS link-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
-    <title>Ajax in one video - CodeWithHarry</title>
+    <title>Ajax basics</title>
   </head>
-
   <body>
-    <h1>Ajax tutorial</h1>
-    <!-- crating the buttons -->
-    <button type="button" id="fetchBtn" class="btn btn-primary">
-      Fetch Data
-    </button>
-    <button type="button" id="popBtn" class="btn btn-secondary">
-      Populate
-    </button>
-
-    <div class="container">
-      <h1>Employee list</h1>
-      <ul id="list"></ul>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">Ajax Basics</a>
+    </nav>
+    <!-- button section -->
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col text-center">
+          <button type="button" class="btn btn-primary" id="text-btn">
+            Text Data
+          </button>
+          <button type="button" class="btn btn-success" id="json-btn">
+            Json data
+          </button>
+          <button type="button" class="btn btn-warning" id="API-btn">
+            API Data
+          </button>
+        </div>
+      </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="Ajaxbasic.js"></script>
+    <!-- Data section -->
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h3>Text Data</h3>
+            </div>
+            <div class="card-body bg-light" id="Text-card"></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              <h3>Json Data</h3>
+            </div>
+            <div class="card-body bg-light" id="Json-card"></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header bg-warning text-white">
+              <h3>API Data</h3>
+            </div>
+            <div class="card-body bg-light" id="APi-card"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="App.js"></script>
   </body>
 </html>
